@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../cordic_ip_1.0/hdl/cordic_rtl.sv" \
+
+verilog xil_defaultlib  \
+"../../../../edit_cordic_ip_v1_0.srcs/sim_1/new/cordic_ip_v1_0_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="mb_design_microblaze_0_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_microblaze_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_axi_gpio_0_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_axi_gpio_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_axi_gpio_1_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_axi_gpio_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="mb_design_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="mb_design_axi_gpio_2_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_axi_gpio_2_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="mb_design_axi_gpio_0_0_synth_1"/>
+	</Run>
+	<Run Id="mb_design_cordic_ip_0_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_cordic_ip_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_dlmb_v10_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_dlmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_ilmb_v10_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_ilmb_v10_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="mb_design_dlmb_v10_0_synth_1"/>
+	</Run>
+	<Run Id="mb_design_dlmb_bram_if_cntlr_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_dlmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_ilmb_bram_if_cntlr_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_ilmb_bram_if_cntlr_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_lmb_bram_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_lmb_bram_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_mdm_1_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_mdm_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_clk_wiz_1_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_clk_wiz_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_rst_clk_wiz_1_100M_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_rst_clk_wiz_1_100M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="mb_design_xbar_0_synth_1" LaunchDir="E:/elektronika-notatki/Rok IV/SDUP/SDUP-FPGA/Lab2/cordic_acc/cordic_acc.runs/mb_design_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

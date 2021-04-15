@@ -27,7 +27,7 @@ module mb_design_tb();
  wire [11:0] cos;
  reg reset, reset_n;
 
- real r_angle = 0.2 * 3.14;
+ real r_angle = 0.0;
  real r_sin, r_cos;
  // Dip switches stimulus
  assign angle = r_angle * 1024;

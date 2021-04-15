@@ -44,7 +44,7 @@ end
 //Stimuli signals
 initial
 begin
-    angle_in <= 1.1 * 1024; //Modify value in fixed-point [2:10]
+    angle_in <= 0.0 * 1024; //Modify value in fixed-point [2:10]
     start <= 1'b0;
     #20 start <= 1'b1;
     #30 start <= 1'b0;

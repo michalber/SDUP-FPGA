@@ -33,7 +33,7 @@
     <Option Name="DSAVendor" Val="xilinx"/>
     <Option Name="DSABoardId" Val="zedboard"/>
     <Option Name="DSANumComputeUnits" Val="60"/>
-    <Option Name="WTXSimLaunchSim" Val="26"/>
+    <Option Name="WTXSimLaunchSim" Val="30"/>
     <Option Name="WTModelSimLaunchSim" Val="0"/>
     <Option Name="WTQuestaLaunchSim" Val="0"/>
     <Option Name="WTIesLaunchSim" Val="0"/>
@@ -67,29 +67,29 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_dlmb_bram_if_cntlr_0/mb_design_dlmb_bram_if_cntlr_0.xci">
-          <Proxy FileSetName="mb_design_dlmb_bram_if_cntlr_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_axi_gpio_2_0/mb_design_axi_gpio_2_0.xci">
-          <Proxy FileSetName="mb_design_axi_gpio_2_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_axi_gpio_0_0/mb_design_axi_gpio_0_0.xci">
-          <Proxy FileSetName="mb_design_axi_gpio_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_dlmb_v10_0/mb_design_dlmb_v10_0.xci">
-          <Proxy FileSetName="mb_design_dlmb_v10_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_mdm_1_0/mb_design_mdm_1_0.xci">
-          <Proxy FileSetName="mb_design_mdm_1_0"/>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_rst_clk_wiz_1_100M_0/mb_design_rst_clk_wiz_1_100M_0.xci">
+          <Proxy FileSetName="mb_design_rst_clk_wiz_1_100M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_xbar_0/mb_design_xbar_0.xci">
           <Proxy FileSetName="mb_design_xbar_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_microblaze_0_0/mb_design_microblaze_0_0.xci">
+          <Proxy FileSetName="mb_design_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_clk_wiz_1_0/mb_design_clk_wiz_1_0.xci">
+          <Proxy FileSetName="mb_design_clk_wiz_1_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_axi_gpio_1_0/mb_design_axi_gpio_1_0.xci">
           <Proxy FileSetName="mb_design_axi_gpio_1_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_microblaze_0_0/mb_design_microblaze_0_0.xci">
-          <Proxy FileSetName="mb_design_microblaze_0_0"/>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_axi_gpio_2_0/mb_design_axi_gpio_2_0.xci">
+          <Proxy FileSetName="mb_design_axi_gpio_2_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_ilmb_v10_0/mb_design_ilmb_v10_0.xci">
+          <Proxy FileSetName="mb_design_ilmb_v10_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_dlmb_bram_if_cntlr_0/mb_design_dlmb_bram_if_cntlr_0.xci">
+          <Proxy FileSetName="mb_design_dlmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_cordic_ip_0_0/mb_design_cordic_ip_0_0.xci">
           <Proxy FileSetName="mb_design_cordic_ip_0_0"/>
@@ -97,17 +97,17 @@
         <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_ilmb_bram_if_cntlr_0/mb_design_ilmb_bram_if_cntlr_0.xci">
           <Proxy FileSetName="mb_design_ilmb_bram_if_cntlr_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_clk_wiz_1_0/mb_design_clk_wiz_1_0.xci">
-          <Proxy FileSetName="mb_design_clk_wiz_1_0"/>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_dlmb_v10_0/mb_design_dlmb_v10_0.xci">
+          <Proxy FileSetName="mb_design_dlmb_v10_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_rst_clk_wiz_1_100M_0/mb_design_rst_clk_wiz_1_100M_0.xci">
-          <Proxy FileSetName="mb_design_rst_clk_wiz_1_100M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_ilmb_v10_0/mb_design_ilmb_v10_0.xci">
-          <Proxy FileSetName="mb_design_ilmb_v10_0"/>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_mdm_1_0/mb_design_mdm_1_0.xci">
+          <Proxy FileSetName="mb_design_mdm_1_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_lmb_bram_0/mb_design_lmb_bram_0.xci">
           <Proxy FileSetName="mb_design_lmb_bram_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="mb_design.bd" FileRelPathName="ip/mb_design_axi_gpio_0_0/mb_design_axi_gpio_0_0.xci">
+          <Proxy FileSetName="mb_design_axi_gpio_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/mb_design/hdl/mb_design_wrapper.v">
@@ -391,9 +391,7 @@
     </Run>
     <Run Id="mb_design_cordic_ip_0_0_synth_1" Type="Ft3:Synth" SrcSet="mb_design_cordic_ip_0_0" Part="xc7z020clg484-1" ConstrsSet="mb_design_cordic_ip_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
         <Step Id="synth_design"/>
       </Strategy>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2018"/>
@@ -625,9 +623,7 @@
     </Run>
     <Run Id="mb_design_cordic_ip_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z020clg484-1" ConstrsSet="mb_design_cordic_ip_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="mb_design_cordic_ip_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

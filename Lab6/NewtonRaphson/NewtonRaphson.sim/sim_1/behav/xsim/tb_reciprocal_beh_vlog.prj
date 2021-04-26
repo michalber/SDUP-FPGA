@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../NewtonRaphson.srcs/sources_1/new/en_reciprocal_beh.sv" \
+"../../../../NewtonRaphson.srcs/sim_1/new/tb_reciprocal_beh.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

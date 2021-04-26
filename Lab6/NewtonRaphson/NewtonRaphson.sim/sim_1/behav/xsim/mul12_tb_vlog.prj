@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../NewtonRaphson.srcs/sources_1/new/mul12.v" \
+"../../../../NewtonRaphson.srcs/sim_1/new/mul12_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

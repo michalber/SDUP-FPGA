@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"mul12_tb_time_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../NewtonRaphson.srcs/sim_1/new/mul12_tb.v" \
+
+# Do not sort compile order
+nosort

@@ -107,7 +107,7 @@ begin
         y[W-1] = 0;
         y[W-2:0] = y_reg[write_counter % 8];
         angle = angle_lut[write_counter % 8] * 1024;
-        $display("First quart. A %f, X %f, Y %f", angle_lut[write_counter % 8], x_reg[write_counter % 8] / 1024.0, y_reg[write_counter % 8] / 1024.0);
+        $display("First quarter. A %f, X %f, Y %f", angle_lut[write_counter % 8], x_reg[write_counter % 8] / 1024.0, y_reg[write_counter % 8] / 1024.0);
     end
     else if(write_counter > 7 && write_counter < 16)
     begin
@@ -116,7 +116,7 @@ begin
         y[W-1] = 0;
         y[W-2:0] = y_reg[7-write_counter % 8];
         angle = (3.1428-angle_lut[7-write_counter % 8]) * 1024;
-        $display("Sec quart. A %f, X %f, Y %f", 3.1428 - angle_lut[7 - write_counter % 8], -x_reg[7 - write_counter % 8] / 1024.0, y_reg[7 - write_counter % 8] / 1024.0);    
+        $display("Second quarter A %f, X %f, Y %f", 3.1428 - angle_lut[7 - write_counter % 8], -x_reg[7 - write_counter % 8] / 1024.0, y_reg[7 - write_counter % 8] / 1024.0);    
     end
     else if(write_counter > 15 && write_counter < 24)
     begin
@@ -125,7 +125,7 @@ begin
         y[W-1] = 1;
         y[W-2:0] = -y_reg[write_counter % 8];
         angle = (1.5*3.1428-angle_lut[7-write_counter % 8]) * 1024;
-        $display("Thrd quart. A %f, X %f, Y %f", 1.5 * 3.1428 - angle_lut[7-write_counter % 8], -x_reg[write_counter % 8] / 1024.0, -y_reg[write_counter % 8] / 1024.0);
+        $display("Third quarter A %f, X %f, Y %f", 1.5 * 3.1428 - angle_lut[7-write_counter % 8], -x_reg[write_counter % 8] / 1024.0, -y_reg[write_counter % 8] / 1024.0);
     end
     else if(write_counter > 23 && write_counter < 32)
     begin
@@ -134,7 +134,7 @@ begin
         y[W-1] = 1;
         y[W-2:0] = -y_reg[7-write_counter % 8];
         angle = (6.2856-angle_lut[7-write_counter % 8]) * 1024;
-        $display("Fourth quart. A %f, X %f, Y %f", 6.2856 - angle_lut[7-write_counter % 8], x_reg[7-write_counter % 8] / 1024.0, -y_reg[7-write_counter % 8] / 1024.0);
+        $display("Fourth quarter A %f, X %f, Y %f", 6.2856 - angle_lut[7-write_counter % 8], x_reg[7-write_counter % 8] / 1024.0, -y_reg[7-write_counter % 8] / 1024.0);
     end
     write_counter = write_counter + 1;
 end

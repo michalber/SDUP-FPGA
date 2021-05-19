@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="cordic_rtl_TB_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="cordic_rtl_TB" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="9724840765fs"></ZoomEndTime>
+      <Cursor1Time time="11000000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="27" />
+   <wvobject fp_name="/cordic_rtl_TB/clock" type="logic">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/start" type="logic">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/angle_in" type="array">
+      <obj_property name="ElementShortName">angle_in[11:0]</obj_property>
+      <obj_property name="ObjectShortName">angle_in[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/ready_out" type="logic">
+      <obj_property name="ElementShortName">ready_out</obj_property>
+      <obj_property name="ObjectShortName">ready_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/ready_out_q" type="logic">
+      <obj_property name="ElementShortName">ready_out_q</obj_property>
+      <obj_property name="ObjectShortName">ready_out_q</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/sin_out" type="array">
+      <obj_property name="ElementShortName">sin_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">sin_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/cos_out" type="array">
+      <obj_property name="ElementShortName">cos_out[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cos_out[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/N" type="array">
+      <obj_property name="ElementShortName">N[31:0]</obj_property>
+      <obj_property name="ObjectShortName">N[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/real_angle" type="other">
+      <obj_property name="ElementShortName">real_angle</obj_property>
+      <obj_property name="ObjectShortName">real_angle</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/real_cos" type="other">
+      <obj_property name="ElementShortName">real_cos</obj_property>
+      <obj_property name="ObjectShortName">real_cos</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/real_cos_correct" type="other">
+      <obj_property name="ElementShortName">real_cos_correct</obj_property>
+      <obj_property name="ObjectShortName">real_cos_correct</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/real_sin" type="other">
+      <obj_property name="ElementShortName">real_sin</obj_property>
+      <obj_property name="ObjectShortName">real_sin</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/real_sin_correct" type="other">
+      <obj_property name="ElementShortName">real_sin_correct</obj_property>
+      <obj_property name="ObjectShortName">real_sin_correct</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/error_sin_LSB" type="other">
+      <obj_property name="ElementShortName">error_sin_LSB</obj_property>
+      <obj_property name="ObjectShortName">error_sin_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/error_cos_LSB" type="other">
+      <obj_property name="ElementShortName">error_cos_LSB</obj_property>
+      <obj_property name="ObjectShortName">error_cos_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/error_max_LSB" type="other">
+      <obj_property name="ElementShortName">error_max_LSB</obj_property>
+      <obj_property name="ObjectShortName">error_max_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/abs" type="other">
+      <obj_property name="ElementShortName">abs</obj_property>
+      <obj_property name="ObjectShortName">abs</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/sum_error2_sin_LSB" type="other">
+      <obj_property name="ElementShortName">sum_error2_sin_LSB</obj_property>
+      <obj_property name="ObjectShortName">sum_error2_sin_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/sum_error2_cos_LSB" type="other">
+      <obj_property name="ElementShortName">sum_error2_cos_LSB</obj_property>
+      <obj_property name="ObjectShortName">sum_error2_cos_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/sum_error_sin_LSB" type="other">
+      <obj_property name="ElementShortName">sum_error_sin_LSB</obj_property>
+      <obj_property name="ObjectShortName">sum_error_sin_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/sum_error_cos_LSB" type="other">
+      <obj_property name="ElementShortName">sum_error_cos_LSB</obj_property>
+      <obj_property name="ObjectShortName">sum_error_cos_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/MSE_sin_LSB" type="other">
+      <obj_property name="ElementShortName">MSE_sin_LSB</obj_property>
+      <obj_property name="ObjectShortName">MSE_sin_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/MSE_cos_LSB" type="other">
+      <obj_property name="ElementShortName">MSE_cos_LSB</obj_property>
+      <obj_property name="ObjectShortName">MSE_cos_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/ME_sin_LSB" type="other">
+      <obj_property name="ElementShortName">ME_sin_LSB</obj_property>
+      <obj_property name="ObjectShortName">ME_sin_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/ME_cos_LSB" type="other">
+      <obj_property name="ElementShortName">ME_cos_LSB</obj_property>
+      <obj_property name="ObjectShortName">ME_cos_LSB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/cordic_rtl_TB/FIX_1" type="other">
+      <obj_property name="ElementShortName">FIX_1</obj_property>
+      <obj_property name="ObjectShortName">FIX_1</obj_property>
+   </wvobject>
+</wave_config>

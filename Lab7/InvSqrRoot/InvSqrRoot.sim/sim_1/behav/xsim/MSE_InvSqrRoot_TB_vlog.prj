@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../InvSqrRoot.srcs/sources_1/new/NRInvSqrRootSM.v" \
+"../../../../InvSqrRoot.srcs/sim_1/new/MSE_InvSqrRoot_TB.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

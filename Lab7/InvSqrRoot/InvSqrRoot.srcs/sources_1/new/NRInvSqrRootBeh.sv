@@ -3,7 +3,7 @@ module NRInvSqrRootBeh(input0, output0);
     
     parameter FRAC_BITS = 19;
     parameter TOTAL_BITS = 25;
-    parameter TOTAL_ITERATIONS = 10;
+    parameter TOTAL_ITERATIONS = 5;
     
 	input reg [TOTAL_BITS-1:0] input0;
 	output reg [TOTAL_BITS-1:0] output0;

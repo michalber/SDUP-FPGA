@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"NRInvSqrRootSMTB_time_synth.v" \
+"../../../../../InvSqrRoot.srcs/sim_1/new/NRInvSqrRootSMTB.v" \
+
+# Do not sort compile order
+nosort

@@ -29,7 +29,7 @@ module NRInvSqrRootBeh(input0, output0);
             
             NewApproxVal = PrevApproxVal[TOTAL_BITS-2:0] * PrevApproxVal[TOTAL_BITS-2:0];
             inter11[TOTAL_BITS-1] = PrevApproxVal[TOTAL_BITS-1] ^ PrevApproxVal[TOTAL_BITS-1];
-            inter11[TOTAL_BITS-2:0] = NewApproxVal[FRAC_BITS + TOTAL_BITS - 2:FRAC_BITS]; // >> ExpN
+            inter11[TOTAL_BITS-2:0] = NewApproxVal[FRAC_BITS + TOTAL_BITS - 2:FRAC_BITS]; // >> FRAC_BITS
             
             r_result12 = inter11[TOTAL_BITS-2:0] * input0[TOTAL_BITS-2:0];
             inter12[TOTAL_BITS-1] = 1; // negative
@@ -85,7 +85,6 @@ module NRInvSqrRootBeh(input0, output0);
             inter13[TOTAL_BITS-1] = 0;
            end
 
-           
             // Divide by 2
             temp1 = inter13 >> 1;
             

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Mon May 24 11:55:49 2021
+| Date             : Mon Jun 14 13:29:58 2021
 | Host             : DESKTOP-28EGR53 running 64-bit major release  (build 9200)
 | Command          : report_power -file NRInvSqrRootSM_power_routed.rpt -pb NRInvSqrRootSM_power_summary_routed.pb -rpx NRInvSqrRootSM_power_routed.rpx
 | Design           : NRInvSqrRootSM
@@ -33,7 +33,7 @@ Table of Contents
 | Total On-Chip Power (W)  | 0.110        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.006        |
+| Dynamic (W)              | 0.005        |
 | Device Static (W)        | 0.104        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 83.7         |
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |      271 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      129 |     53200 |            0.24 |
-|   CARRY4       |    <0.001 |        6 |     13300 |            0.05 |
-|   Register     |    <0.001 |      107 |    106400 |            0.10 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |      173 |       --- |             --- |
+|   LUT as Logic |    <0.001 |       91 |     53200 |            0.17 |
+|   Register     |    <0.001 |       60 |    106400 |            0.06 |
+|   CARRY4       |    <0.001 |        5 |     13300 |            0.04 |
 |   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |    <0.001 |      499 |       --- |             --- |
-| DSPs           |     0.003 |        6 |       220 |            2.73 |
-| I/O            |    <0.001 |       53 |       200 |           26.50 |
+| Signals        |    <0.001 |      184 |       --- |             --- |
+| DSPs           |     0.002 |        3 |       220 |            1.36 |
+| I/O            |    <0.001 |       29 |       200 |           14.50 |
 | Static Power   |     0.104 |          |           |                 |
 | Total          |     0.110 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
@@ -135,7 +135,7 @@ Table of Contents
 +-------+--------+-----------------+
 | Clock | Domain | Constraint (ns) |
 +-------+--------+-----------------+
-| clock | clock  |            20.0 |
+| clock | clock  |             7.0 |
 +-------+--------+-----------------+
 
 
@@ -148,7 +148,7 @@ Table of Contents
 +----------------+-----------+
 | Name           | Power (W) |
 +----------------+-----------+
-| NRInvSqrRootSM |     0.006 |
+| NRInvSqrRootSM |     0.005 |
 +----------------+-----------+
 
 

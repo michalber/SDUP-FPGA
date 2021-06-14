@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Mon May 24 11:54:52 2021
+| Date         : Mon Jun 14 13:29:07 2021
 | Host         : DESKTOP-28EGR53 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file NRInvSqrRootSM_control_sets_placed.rpt
 | Design       : NRInvSqrRootSM
@@ -23,8 +23,8 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Number of unique control sets                            |     7 |
-| Unused register locations in slices containing registers |    29 |
+| Number of unique control sets                            |     8 |
+| Unused register locations in slices containing registers |    36 |
 +----------------------------------------------------------+-------+
 
 
@@ -35,9 +35,12 @@ Table of Contents
 | Fanout | Control Sets |
 +--------+--------------+
 |      1 |            1 |
-|      2 |            1 |
-|      4 |            2 |
-|    16+ |            3 |
+|      3 |            1 |
+|      4 |            1 |
+|      5 |            1 |
+|     10 |            1 |
+|     12 |            2 |
+|     13 |            1 |
 +--------+--------------+
 
 
@@ -47,12 +50,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | No                     |               3 |            2 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
-| Yes          | No                    | No                     |              24 |            9 |
+| Yes          | No                    | No                     |              12 |            4 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              81 |           27 |
+| Yes          | Yes                   | No                     |              45 |           15 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -63,12 +66,13 @@ Table of Contents
 |   Clock Signal   |         Enable Signal        |      Set/Reset Signal     | Slice Load Count | Bel Load Count |
 +------------------+------------------------------+---------------------------+------------------+----------------+
 |  clock_IBUF_BUFG | ready_out_i_1_n_0            | reset_IBUF                |                1 |              1 |
-|  clock_IBUF_BUFG |                              |                           |                2 |              2 |
-|  clock_IBUF_BUFG | iteration_counter[3]_i_1_n_0 | reset_IBUF                |                2 |              4 |
+|  clock_IBUF_BUFG |                              |                           |                2 |              3 |
 |  clock_IBUF_BUFG | state[3]_i_1_n_0             | reset_IBUF                |                1 |              4 |
-|  clock_IBUF_BUFG | PrevApproxVal0_i_1_n_0       | PrevApproxVal[23]_i_1_n_0 |                7 |             23 |
-|  clock_IBUF_BUFG | val_out[23]_i_1_n_0          |                           |                9 |             24 |
-|  clock_IBUF_BUFG | inter13[23]_i_1_n_0          | reset_IBUF                |               16 |             49 |
+|  clock_IBUF_BUFG | iteration_counter[4]_i_1_n_0 | reset_IBUF                |                1 |              5 |
+|  clock_IBUF_BUFG | inter110_i_1_n_0             | PrevApproxVal[11]_i_1_n_0 |                3 |             10 |
+|  clock_IBUF_BUFG | inter13[11]_i_1_n_0          | reset_IBUF                |                5 |             12 |
+|  clock_IBUF_BUFG | val_out[11]_i_1_n_0          |                           |                4 |             12 |
+|  clock_IBUF_BUFG | inter12[12]_i_1_n_0          | reset_IBUF                |                4 |             13 |
 +------------------+------------------------------+---------------------------+------------------+----------------+
 
 

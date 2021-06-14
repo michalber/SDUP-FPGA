@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"MSE_InvSqrRoot_TB_time_impl.v" \
+
+sv xil_defaultlib  \
+"../../../../../InvSqrRoot.srcs/sim_1/new/MSE_InvSqrRoot_TB.sv" \
+
+# Do not sort compile order
+nosort

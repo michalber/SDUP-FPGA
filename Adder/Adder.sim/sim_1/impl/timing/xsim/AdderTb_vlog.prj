@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"AdderTb_time_impl.v" \
+
+sv xil_defaultlib  \
+"../../../../../Adder.srcs/sim_1/new/AdderTb.sv" \
+
+# Do not sort compile order
+nosort

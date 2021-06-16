@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Wed Jun 16 14:20:00 2021
+# Process ID: 17552
+# Current directory: E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12668 E:\elektronika-notatki\Rok_IV\SDUP\SDUP-FPGA\Adder\Adder.xpr
+# Log file: E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/vivado.log
+# Journal file: E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source AdderTb.tcl
+relaunch_sim
+close_sim
+launch_simulation
+source AdderTb.tcl
+close_sim
+launch_simulation
+source AdderTb.tcl
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+relaunch_sim
+close_sim
+launch_simulation
+source AdderTb.tcl
+run 10 us
+run 10 us
+run 1000 us
+run 1000 us
+run 10000 us
+close_sim
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+file mkdir E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/constrs_1
+file mkdir E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/constrs_1/new
+close [ open E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/constrs_1/new/clock.xdc w ]
+add_files -fileset constrs_1 E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/constrs_1/new/clock.xdc
+reset_run synth_1
+launch_runs impl_1 -jobs 4
+wait_on_run impl_1
+open_run impl_1
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+close_design
+launch_simulation -mode post-implementation -type timing
+source AdderTb.tcl
+run 10000 us
+close_sim

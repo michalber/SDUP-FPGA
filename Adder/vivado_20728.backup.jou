@@ -1,0 +1,121 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Tue Jun 22 17:02:31 2021
+# Process ID: 20728
+# Current directory: E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18504 E:\elektronika-notatki\Rok_IV\SDUP\SDUP-FPGA\Adder\Adder.xpr
+# Log file: E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/vivado.log
+# Journal file: E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.xpr
+update_compile_order -fileset sources_1
+launch_simulation -mode post-synthesis -type timing
+source AdderTb.tcl
+run 1000 us
+run 1000 us
+run 1000 us
+run 1000 us
+run 1000 us
+run 1000 us
+relaunch_sim
+relaunch_sim
+close_sim
+report_timing_summary -delay_type min_max -report_unconstrained -check_timing_verbose -max_paths 10 -input_pins -routable_nets -name timing_1
+report_timing -from [get_ports X,Y] -to [get_ports S]
+get_ports
+report_timing -from [get_ports X[0]] -to [get_ports S[0]
+report_timing -from [get_ports X[0]] -to [get_ports S[0]]
+report_timing -from [get_ports X[255]] -to [get_ports S[255]]
+report_timing -from [get_ports Y[255]] -to [get_ports S[255]]
+report_timing -from [get_ports Y[0]] -to [get_ports S[255]]
+report_timing -from [get_ports Y[0:255]] -to [get_ports S[0:255]]
+get_ports
+report_timing -from [get_ports Y[0]] -to [get_ports S[0]]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ModularCarryAdder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+get_ports
+open_run synth_1 -name synth_1
+get_ports
+report_timing -from [get_ports a[0]] -to [get_ports S[255]]
+report_timing -from [get_ports a[0]] -to [get_ports s[255]]
+report_timing -from [get_ports a[0]] -to [get_ports sum[255]]
+report_timing -from [get_ports b[0]] -to [get_ports sum[255]]
+check_timing -verbose -name timing_1
+close_design
+close [ open E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/sources_1/new/256bCSA.v w ]
+add_files E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/sources_1/new/256bCSA.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/sources_1/new/256bCSA.v] -no_script -reset -force -quiet
+remove_files  E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/sources_1/new/256bCSA.v
+remove_files  E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/sources_1/new/256bCSA.v
+close [ open E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/sources_1/new/b256CSA.v w ]
+add_files E:/elektronika-notatki/Rok_IV/SDUP/SDUP-FPGA/Adder/Adder.srcs/sources_1/new/b256CSA.v
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top b256CSA [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source AdderTb.tcl
+relaunch_sim
+relaunch_sim
+run 1000 us
+close_sim
+launch_simulation
+source AdderTb.tcl
+run 1000 us
+run 1000 us
+run 1000 us
+relaunch_sim
+relaunch_sim
+run 1000 us
+run 1000 us
+run 1000 us
+relaunch_sim
+run 1000 us
+relaunch_sim
+relaunch_sim
+run 1000 us
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+get_ports
+report_timing -from [get_ports b[0]] -to [get_ports sum[255]]
+launch_simulation -mode post-synthesis -type timing
+launch_simulation -mode post-synthesis -type timing
+source AdderTb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top ripple_adder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+reset_run synth_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+close_sim
+launch_simulation -mode post-synthesis -type timing
+source AdderTb.tcl
+update_compile_order -fileset sources_1
+close_sim

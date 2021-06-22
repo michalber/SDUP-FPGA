@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"AdderTb_time_synth.v" \
+"../../../../../Adder.srcs/sources_1/new/CarrySelectAdder.v" \
+"../../../../../Adder.srcs/sources_1/new/ModularCarryAdder.v" \
+"../../../../../Adder.srcs/sources_1/new/b256CSA.v" \
+
+sv xil_defaultlib  \
+"../../../../../Adder.srcs/sources_1/new/Carry4BitsAdder.v" \
+"../../../../../Adder.srcs/sources_1/new/FullAdder.v" \
+"../../../../../Adder.srcs/sources_1/new/Mux2.v" \
+"../../../../../Adder.srcs/sim_1/new/AdderTb.sv" \
+
+# Do not sort compile order
+nosort

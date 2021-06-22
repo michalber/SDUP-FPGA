@@ -1,5 +1,5 @@
 module ModularCarryAdder(a, b, cin, sum, cout);
-    parameter W=16;
+    parameter W=256;
     
     input [W-1:0] a,b;
     input cin;

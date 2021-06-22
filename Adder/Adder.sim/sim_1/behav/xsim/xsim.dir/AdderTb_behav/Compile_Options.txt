@@ -1,1 +1,1 @@
--wto "2932006c37bc493298b27459ea6673f2" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "AdderTb_behav" "xil_defaultlib.AdderTb" "xil_defaultlib.glbl" -log "elaborate.log" 
+-wto "2932006c37bc493298b27459ea6673f2" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" -L "xpm" --snapshot "AdderTb_behav" "xil_defaultlib.AdderTb" "xil_defaultlib.glbl" -log "elaborate.log" 
